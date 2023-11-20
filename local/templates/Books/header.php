@@ -10,21 +10,21 @@
     <title><?$APPLICATION->ShowTitle();?></title>
     <?$APPLICATION->ShowHead();?>
 
-    <?
-    $APPLICATION->SetAdditionalCSS("./css/screen.css");
-    $APPLICATION->SetAdditionalCSS("./font/font.css");
-    $APPLICATION->SetAdditionalCSS("./css/jquery.fancybox.css");
-    $APPLICATION->SetAdditionalCSS("./css/jquery.bxslider.css");
-    $APPLICATION->SetAdditionalCSS("./css/jquery.formstyler.css");
-    $APPLICATION->SetAdditionalCSS("./css/jquery.formstyler.theme.css");
+    <?php
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/screen.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/font/font.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/jquery.fancybox.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/jquery.bxslider.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/jquery.formstyler.css");
+    $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/jquery.formstyler.theme.css");
     ?>
 
-    <?
-    $APPLICATION->AddHeadScript("./js/jquery-3.1.1.min.js");
-    $APPLICATION->AddHeadScript("./js/jquery.fancybox.min.js");
-    $APPLICATION->AddHeadScript("./js/jquery.bxslider.min.js");
-    $APPLICATION->AddHeadScript("./js/jquery.formstyler.min.js");
-    $APPLICATION->AddHeadScript("./js/main.js");
+    <?php
+    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery-3.1.1.min.js");
+    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.fancybox.min.js");
+    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.bxslider.min.js");
+    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery.formstyler.min.js");
+    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/main.js");
     ?>
 
 <!--    <link href="./css/screen.css" rel="stylesheet" type="text/css" >-->
@@ -46,7 +46,7 @@
 <header>
     <div class="top_head_white_bl">
         <div class="standart_width">
-            <div class="top_head_logo"><a href="/"><img src="./img/logo.png" alt=""/></a></div>
+            <div class="top_head_logo"><a href="/"><img src="<?=SITE_TEMPLATE_PATH?>/img/logo.png" alt=""/></a></div>
             <div class="top_head_tel_bl">
                 <div class="top_head_tel">
                     <a href="tel:+79003002010">8 (900) 300-20-10</a>
@@ -132,26 +132,26 @@
     <div class="index_slider_bl">
         <ul class="index_slider">
             <li>
-                <div class="index_slider_el" style="background-image:url(./img/index_slider_bg.png);">
+                <div class="index_slider_el" style="background-image:url(<?=SITE_TEMPLATE_PATH?>/img/index_slider_bg.png);">
                     <div class="standart_width index_slider_cont">
                         <div class="ind_slid_txt_bl">
                             <div class="ind_slid_tit">Осенний ценопад</div>
                             <div class="ind_slid_txt">Перспективное планирование способствует повышению качества поставленных обществом задач. В частности, синтетическое тестирование прекрасно подходит для реализации стандартных подходов.</div>
                             <a class="red_bt" href="">Узнать подробнее</a>
                         </div>
-                        <div class="ind_slid_img"><img src="./img/index_slider1.png" alt=""/></div>
+                        <div class="ind_slid_img"><img src="<?=SITE_TEMPLATE_PATH?>/img/index_slider1.png" alt=""/></div>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="index_slider_el" style="background-image:url(./img/index_slider_bg.png);">
+                <div class="index_slider_el" style="background-image:url(<?=SITE_TEMPLATE_PATH?>/img/index_slider_bg.png);">
                     <div class="standart_width index_slider_cont">
                         <div class="ind_slid_txt_bl">
                             <div class="ind_slid_tit">Осенний ценопад</div>
                             <div class="ind_slid_txt">Перспективное планирование способствует повышению качества поставленных обществом задач. В частности, синтетическое тестирование прекрасно подходит для реализации стандартных подходов.</div>
                             <a class="red_bt" href="">Узнать подробнее</a>
                         </div>
-                        <div class="ind_slid_img"><img src="./img/index_slider1.png" alt=""/></div>
+                        <div class="ind_slid_img"><img src="<?=SITE_TEMPLATE_PATH?>/img/index_slider1.png" alt=""/></div>
                     </div>
                 </div>
             </li>
@@ -165,7 +165,7 @@
             <div class="catalog_list">
                 <div class="catalog_el">
                     <div class="cat_el_img">
-                        <a href=""><img src="./img/produce1.png" alt=""/></a>
+                        <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/produce1.png" alt=""/></a>
                         <div class="cat_el_status">
                             <div class="red">акция</div>
                             <div class="green">новинка</div>
@@ -173,11 +173,11 @@
                         </div>
                     </div>
                     <div class="cat_el_star">
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_gray.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_gray.png" alt=""/>
                     </div>
                     <div class="cat_el_price">
                         <div class="cat_price">221 руб.</div>
@@ -194,14 +194,14 @@
                 </div>
                 <div class="catalog_el">
                     <div class="cat_el_img">
-                        <a href=""><img src="./img/produce2.png" alt=""/></a>
+                        <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/produce2.png" alt=""/></a>
                     </div>
                     <div class="cat_el_star">
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_gray.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_gray.png" alt=""/>
                     </div>
                     <div class="cat_el_price">
                         <div class="cat_price">221 руб.</div>
@@ -214,14 +214,14 @@
                 </div>
                 <div class="catalog_el">
                     <div class="cat_el_img">
-                        <a href=""><img src="./img/produce3.png" alt=""/></a>
+                        <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/produce3.png" alt=""/></a>
                     </div>
                     <div class="cat_el_star">
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_gray.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_gray.png" alt=""/>
                     </div>
                     <div class="cat_el_price">
                         <div class="cat_price">90 руб.</div>
@@ -238,14 +238,14 @@
                 </div>
                 <div class="catalog_el">
                     <div class="cat_el_img">
-                        <a href=""><img src="./img/produce4.png" alt=""/></a>
+                        <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/produce4.png" alt=""/></a>
                     </div>
                     <div class="cat_el_star">
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_gray.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_gray.png" alt=""/>
                     </div>
                     <div class="cat_el_price">
                         <div class="cat_price">450 руб.</div>
@@ -258,14 +258,14 @@
                 </div>
                 <div class="catalog_el">
                     <div class="cat_el_img">
-                        <a href=""><img src="./img/produce5.png" alt=""/></a>
+                        <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/produce5.png" alt=""/></a>
                     </div>
                     <div class="cat_el_star">
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_gray.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_gray.png" alt=""/>
                     </div>
                     <div class="cat_el_price">
                         <div class="cat_price">900 000 руб.</div>
@@ -278,14 +278,14 @@
                 </div>
                 <div class="catalog_el">
                     <div class="cat_el_img">
-                        <a href=""><img src="./img/produce6.png" alt=""/></a>
+                        <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/produce6.png" alt=""/></a>
                     </div>
                     <div class="cat_el_star">
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_orange.png" alt=""/>
-                        <img src="./img/star_gray.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_gray.png" alt=""/>
                     </div>
                     <div class="cat_el_price">
                         <div class="cat_price">653 руб.</div>

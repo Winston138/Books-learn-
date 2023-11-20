@@ -1,9 +1,12 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
+</div>
+</div>
+</section>
 <footer>
     <div class="foot_info_bl">
         <div class="standart_width">
-            <div class="top_head_logo"><a href="/"><img src="./img/logo.png" alt=""/></a></div>
+            <div class="top_head_logo"><a href="/"><img src="<?=SITE_TEMPLATE_PATH?>/img/logo.png" alt=""/></a></div>
             <div class="foot_menu">
                 <ul>
                     <li><a href="">Каталог</a></li>
@@ -27,7 +30,7 @@
         <div class="standart_width">
             <div class="position_relative">
                 <div class="foot_prava">Copyright © 2018 Salavey.net Разработка, реализация и развитие e-commerce проектов на 1С-Битрикс.</div>
-                <a class="foot_salavey" href=""><img src="./img/salavey.png" alt=""/></a>
+                <a class="foot_salavey" href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/salavey.png" alt=""/></a>
             </div>
         </div>
     </div>
@@ -58,3 +61,5 @@
         </div>
     </form>
 </div>
+</body>
+</html>
