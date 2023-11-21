@@ -5,7 +5,7 @@
 
 <head>
     <div id="panel"><?$APPLICATION->ShowPanel();?></div>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title><?$APPLICATION->ShowTitle();?></title>
     <?$APPLICATION->ShowHead();?>
@@ -46,11 +46,42 @@
 <header>
     <div class="top_head_white_bl">
         <div class="standart_width">
-            <div class="top_head_logo"><a href="/"><img src="<?=SITE_TEMPLATE_PATH?>/img/logo.png" alt=""/></a></div>
+            <div class="top_head_logo">
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    Array(
+                        "AREA_FILE_SHOW" => "file",
+                        "AREA_FILE_SUFFIX" => "inc",
+                        "EDIT_TEMPLATE" => "",
+                        "PATH" => "/include/inc_logo.php"
+                    )
+                );?>
+            </div>
             <div class="top_head_tel_bl">
                 <div class="top_head_tel">
-                    <a href="tel:+79003002010">8 (900) 300-20-10</a>
-                    <span>  с 8:00 до 20:00 (Мск)</span>
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "AREA_FILE_SUFFIX" => "inc",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/include/inc_phone.php"
+                        )
+                    );?>
+                    <span>
+                        <?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/include/inc_operating_mode.php"
+                            )
+                        );?>
+                    </span>
                 </div>
             </div>
             <div class="top_head_favor_bl">
@@ -58,7 +89,18 @@
                     <a href="">Избранное</a><span>10</span>
                 </div>
             </div>
-            <div class="top_head_bt"><a class="green_bt" data-fancybox data-src="#call_back" href="javascript:;">Обратный звонок</a></div>
+            <div class="top_head_bt"><a class="green_bt" data-fancybox data-src="#call_back" href="javascript:;">
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "AREA_FILE_SUFFIX" => "inc",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/include/inc_call_back.php"
+                        )
+                    );?>
+                </a></div>
         </div>
     </div>
     <div class="blue_head_info_bl">
@@ -161,143 +203,4 @@
 <section>
     <div class="gray_bg">
         <div class="standart_width">
-            <div class="title">Популярные товары</div>
-            <div class="catalog_list">
-                <div class="catalog_el">
-                    <div class="cat_el_img">
-                        <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/produce1.png" alt=""/></a>
-                        <div class="cat_el_status">
-                            <div class="red">акция</div>
-                            <div class="green">новинка</div>
-                            <div class="blue">бестселлер</div>
-                        </div>
-                    </div>
-                    <div class="cat_el_star">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_gray.png" alt=""/>
-                    </div>
-                    <div class="cat_el_price">
-                        <div class="cat_price">221 руб.</div>
-                        <div class="cat_old_price">
-                            <div class="price">287 руб.</div>
-                            <div class="sale">-22%</div>
-                        </div>
-                    </div>
-                    <div class="cat_el_name">
-                        <div class="cat_el_tit"><a href="">Красная Книга</a></div>
-                        <div class="cat_el_avtor">Константин  Красновский</div>
-                    </div>
-                    <a class="favor_bt" href="">В избранное</a>
-                </div>
-                <div class="catalog_el">
-                    <div class="cat_el_img">
-                        <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/produce2.png" alt=""/></a>
-                    </div>
-                    <div class="cat_el_star">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_gray.png" alt=""/>
-                    </div>
-                    <div class="cat_el_price">
-                        <div class="cat_price">221 руб.</div>
-                    </div>
-                    <div class="cat_el_name">
-                        <div class="cat_el_tit"><a href="">Зеленая Книга</a></div>
-                        <div class="cat_el_avtor">Зенаид Зеленовский</div>
-                    </div>
-                    <a class="favor_bt active" href="">В избранное</a>
-                </div>
-                <div class="catalog_el">
-                    <div class="cat_el_img">
-                        <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/produce3.png" alt=""/></a>
-                    </div>
-                    <div class="cat_el_star">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_gray.png" alt=""/>
-                    </div>
-                    <div class="cat_el_price">
-                        <div class="cat_price">90 руб.</div>
-                        <div class="cat_old_price">
-                            <div class="price">100 руб.</div>
-                            <div class="sale">-10%</div>
-                        </div>
-                    </div>
-                    <div class="cat_el_name">
-                        <div class="cat_el_tit"><a href="">Фиолетовая книга</a></div>
-                        <div class="cat_el_avtor">Филипп Фиолетов</div>
-                    </div>
-                    <a class="favor_bt" href="">В избранное</a>
-                </div>
-                <div class="catalog_el">
-                    <div class="cat_el_img">
-                        <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/produce4.png" alt=""/></a>
-                    </div>
-                    <div class="cat_el_star">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_gray.png" alt=""/>
-                    </div>
-                    <div class="cat_el_price">
-                        <div class="cat_price">450 руб.</div>
-                    </div>
-                    <div class="cat_el_name">
-                        <div class="cat_el_tit"><a href="">Серая Книга</a></div>
-                        <div class="cat_el_avtor">Сергей Серый</div>
-                    </div>
-                    <a class="favor_bt" href="">В избранное</a>
-                </div>
-                <div class="catalog_el">
-                    <div class="cat_el_img">
-                        <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/produce5.png" alt=""/></a>
-                    </div>
-                    <div class="cat_el_star">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_gray.png" alt=""/>
-                    </div>
-                    <div class="cat_el_price">
-                        <div class="cat_price">900 000 руб.</div>
-                    </div>
-                    <div class="cat_el_name">
-                        <div class="cat_el_tit"><a href="">Цвет настроения синий</a></div>
-                        <div class="cat_el_avtor">Филипп Киркоров</div>
-                    </div>
-                    <a class="favor_bt" href="">В избранное</a>
-                </div>
-                <div class="catalog_el">
-                    <div class="cat_el_img">
-                        <a href=""><img src="<?=SITE_TEMPLATE_PATH?>/img/produce6.png" alt=""/></a>
-                    </div>
-                    <div class="cat_el_star">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_orange.png" alt=""/>
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/star_gray.png" alt=""/>
-                    </div>
-                    <div class="cat_el_price">
-                        <div class="cat_price">653 руб.</div>
-                    </div>
-                    <div class="cat_el_name">
-                        <div class="cat_el_tit"><a href="">Blackstar</a></div>
-                        <div class="cat_el_avtor">Тимур Ильдарович</div>
-                    </div>
-                    <a class="favor_bt" href="">В избранное</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="white_bg">
-        <div class="standart_width">
+
