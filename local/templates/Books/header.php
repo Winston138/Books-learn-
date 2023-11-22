@@ -106,6 +106,25 @@
     <div class="blue_head_info_bl">
         <div class="standart_width clear_after">
             <div class="header_menu_bl">
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:menu",
+                    "header",
+                    array(
+                        "ALLOW_MULTI_SELECT" => "N",
+                        "CHILD_MENU_TYPE" => "left",
+                        "DELAY" => "N",
+                        "MAX_LEVEL" => "3",
+                        "MENU_CACHE_GET_VARS" => array(
+                        ),
+                        "MENU_CACHE_TIME" => "3600",
+                        "MENU_CACHE_TYPE" => "A",
+                        "MENU_CACHE_USE_GROUPS" => "Y",
+                        "ROOT_MENU_TYPE" => "top",
+                        "USE_EXT" => "Y",
+                        "COMPONENT_TEMPLATE" => "horizontal_multilevel"
+                        ),
+                    false
+                    );?>
                 <ul class="header_menu">
                     <li>
                         <a class="menu_lvl1_bt arrow active" href=""><span>Каталог</span></a>
