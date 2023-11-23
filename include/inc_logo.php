@@ -1,1 +1,1 @@
-<a href="/"><img src="<?=SITE_TEMPLATE_PATH?>/img/logo.png" alt=""/></a>
+<a href="/"><img src="/local/templates/Books/img/logo.png" alt=""></a>

@@ -24,11 +24,10 @@ foreach($arResult as $arItem):?>
 	<?else:?>
 
 		<?if ($arItem["PERMISSION"] > "D"):?>
-
 			<?if ($arItem["DEPTH_LEVEL"] == 1):?>
-				<li><a href="<?=$arItem["LINK"]?>" class="menu_lvl1_bt <?if ($arItem["SELECTED"]):?>active<?endif?>"><?=$arItem["TEXT"]?></a></li>
+				<li><a href="<?=$arItem["LINK"]?>" class="menu_lvl1_bt <?if ($arItem["SELECTED"]):?>active<?endif?>"><span><?=$arItem["TEXT"]?></span></a></li>
 			<?else:?>
-				<li<?if ($arItem["SELECTED"]):?> class="item-selected"<?endif?>><a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a></li>
+				<li><a <?if ($arItem["SELECTED"]):?> class="active"<?endif?> href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a></li>
 			<?endif?>
 
 		<?else:?>

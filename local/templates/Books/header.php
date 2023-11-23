@@ -125,62 +125,62 @@
                         ),
                     false
                     );?>
-                <ul class="header_menu">
-                    <li>
-                        <a class="menu_lvl1_bt arrow active" href=""><span>Каталог</span></a>
-                        <ul class="menu_lvl2">
-                            <li>
-                                <a class="menu_lvl2_bt arrow active" href="">Учебная литература</a>
-                                <ul class="menu_lvl3">
-                                    <li><a href="">Для школьников</a></li>
-                                    <li><a class="active" href="">Дополнительное образование</a></li>
-                                    <li><a href="">Книги для дошкольников</a></li>
-                                    <li><a href="">Подготовка к ЕГЭ</a></li>
-                                    <li><a href="">Подготовка к ОГЭ (ГИА)</a></li>
-                                    <li><a href="">Словари и разговорники</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="menu_lvl2_bt arrow" href="">Детская литература</a>
-                                <ul class="menu_lvl3">
-                                    <li><a href="">Для школьников</a></li>
-                                    <li><a href="">Дополнительное образование</a></li>
-                                    <li><a href="">Книги для дошкольников</a></li>
-                                    <li><a href="">Подготовка к ЕГЭ</a></li>
-                                    <li><a href="">Подготовка к ОГЭ (ГИА)</a></li>
-                                    <li><a href="">Словари и разговорники</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="menu_lvl2_bt arrow" href="">Художественная литература</a>
-                                <ul class="menu_lvl3">
-                                    <li><a href="">Для школьников</a></li>
-                                    <li><a href="">Дополнительное образование</a></li>
-                                    <li><a href="">Книги для дошкольников</a></li>
-                                    <li><a href="">Подготовка к ЕГЭ</a></li>
-                                    <li><a href="">Подготовка к ОГЭ (ГИА)</a></li>
-                                    <li><a href="">Словари и разговорники</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="menu_lvl2_bt arrow" href="">Бизнес-литература</a>
-                                <ul class="menu_lvl3">
-                                    <li><a href="">Для школьников</a></li>
-                                    <li><a href="">Дополнительное образование</a></li>
-                                    <li><a href="">Книги для дошкольников</a></li>
-                                    <li><a href="">Подготовка к ЕГЭ</a></li>
-                                    <li><a href="">Подготовка к ОГЭ (ГИА)</a></li>
-                                    <li><a href="">Словари и разговорники</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a class="menu_lvl1_bt" href=""><span>Акции</span></a></li>
-                    <li><a class="menu_lvl1_bt" href=""><span>Доставка</span></a></li>
-                    <li><a class="menu_lvl1_bt" href=""><span>О компании</span></a></li>
-                    <li><a class="menu_lvl1_bt" href=""><span>Новости</span></a></li>
-                    <li><a class="menu_lvl1_bt" href=""><span>Контакты</span></a></li>
-                </ul>
+<!--                <ul class="header_menu">-->
+<!--                    <li>-->
+<!--                        <a class="menu_lvl1_bt arrow active" href=""><span>Каталог</span></a>-->
+<!--                        <ul class="menu_lvl2">-->
+<!--                            <li>-->
+<!--                                <a class="menu_lvl2_bt arrow active" href="">Учебная литература</a>-->
+<!--                                <ul class="menu_lvl3">-->
+<!--                                    <li><a href="">Для школьников</a></li>-->
+<!--                                    <li><a class="active" href="">Дополнительное образование</a></li>-->
+<!--                                    <li><a href="">Книги для дошкольников</a></li>-->
+<!--                                    <li><a href="">Подготовка к ЕГЭ</a></li>-->
+<!--                                    <li><a href="">Подготовка к ОГЭ (ГИА)</a></li>-->
+<!--                                    <li><a href="">Словари и разговорники</a></li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a class="menu_lvl2_bt arrow" href="">Детская литература</a>-->
+<!--                                <ul class="menu_lvl3">-->
+<!--                                    <li><a href="">Для школьников</a></li>-->
+<!--                                    <li><a href="">Дополнительное образование</a></li>-->
+<!--                                    <li><a href="">Книги для дошкольников</a></li>-->
+<!--                                    <li><a href="">Подготовка к ЕГЭ</a></li>-->
+<!--                                    <li><a href="">Подготовка к ОГЭ (ГИА)</a></li>-->
+<!--                                    <li><a href="">Словари и разговорники</a></li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a class="menu_lvl2_bt arrow" href="">Художественная литература</a>-->
+<!--                                <ul class="menu_lvl3">-->
+<!--                                    <li><a href="">Для школьников</a></li>-->
+<!--                                    <li><a href="">Дополнительное образование</a></li>-->
+<!--                                    <li><a href="">Книги для дошкольников</a></li>-->
+<!--                                    <li><a href="">Подготовка к ЕГЭ</a></li>-->
+<!--                                    <li><a href="">Подготовка к ОГЭ (ГИА)</a></li>-->
+<!--                                    <li><a href="">Словари и разговорники</a></li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a class="menu_lvl2_bt arrow" href="">Бизнес-литература</a>-->
+<!--                                <ul class="menu_lvl3">-->
+<!--                                    <li><a href="">Для школьников</a></li>-->
+<!--                                    <li><a href="">Дополнительное образование</a></li>-->
+<!--                                    <li><a href="">Книги для дошкольников</a></li>-->
+<!--                                    <li><a href="">Подготовка к ЕГЭ</a></li>-->
+<!--                                    <li><a href="">Подготовка к ОГЭ (ГИА)</a></li>-->
+<!--                                    <li><a href="">Словари и разговорники</a></li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li><a class="menu_lvl1_bt" href=""><span>Акции</span></a></li>-->
+<!--                    <li><a class="menu_lvl1_bt" href=""><span>Доставка</span></a></li>-->
+<!--                    <li><a class="menu_lvl1_bt" href=""><span>О компании</span></a></li>-->
+<!--                    <li><a class="menu_lvl1_bt" href=""><span>Новости</span></a></li>-->
+<!--                    <li><a class="menu_lvl1_bt" href=""><span>Контакты</span></a></li>-->
+<!--                </ul>-->
             </div>
             <div class="head_search_bl">
                 <form>
